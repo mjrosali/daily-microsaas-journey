@@ -1,0 +1,33 @@
+# === Java / Build Output ===
+target/
+build/
+out/
+bin/
+*.class
+
+# === IDE & Editor Files ===
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# === Logs ===
+*.log
+spring.log
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === Others you usually don't want in git ===
+*.swp
+*.swo
