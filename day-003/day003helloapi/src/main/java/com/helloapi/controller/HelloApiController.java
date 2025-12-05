@@ -9,13 +9,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api2")
+@RequestMapping("/api")
 public class HelloApiController {
 
     @GetMapping("/hello")
     public Map<String, String> hello() {
         Map<String, String> helloapi = new HashMap<>();
         helloapi.put("message", "hello from api!");
+        helloapi.put("day", "003");
         return helloapi;
     }
 
@@ -23,6 +24,7 @@ public class HelloApiController {
     public Map<String, String> hello(@PathVariable String name) {
         Map<String, String> helloapi = new HashMap<>();
         helloapi.put("message", "hello " + name + " from api!");
+        helloapi.put("day", "003");
         return helloapi;
     }
 }
